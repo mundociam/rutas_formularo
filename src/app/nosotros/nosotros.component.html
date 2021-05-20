@@ -1,0 +1,13 @@
+<div class="mt-5">
+    <h2>Nosotros</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, praesentium possimus eaque aperiam corrupti distinctio laborum eum facere dolor nesciunt architecto minus molestias autem ducimus fuga ab sit pariatur at?</p>
+
+    <ul class="list-group">
+        <li class="list-group-item active" aria-current="true" *ngFor= "let item of equipo, index as i">
+            <H6>Nombre : {{item.nombre}}</H6>
+            <H6>Nombre : {{item.especialidad}}</H6>
+           <a [routerLink]="['/equipo', i]" class="text-white">Leer mas..</a>
+        </li>
+       
+      </ul>
+</div>
